@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--image", "${input:imagePath}",
+                "--output", "${input:outputPath}"
+            ],
+            "justMyCode": true
+        }
+    ],
+    "inputs": [
+        {
+            "id": "imagePath",
+            "type": "promptString",
+            "description": "Enter the path to the image file",
+            "default": ""
+        },
+        {
+            "id": "outputPath",
+            "type": "promptString",
+            "description": "Enter the path to the output directory",
+            "default": ""
+        }
+    ]
+}
